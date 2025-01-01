@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Text-to-Speech Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text-to-Speech Tool</h1>
+        <textarea id="textBox" placeholder="Type or paste text here..."></textarea>
+        <div class="controls">
+            <select id="voiceDropdown">
+                <option disabled selected>Loading voices...</option>
+            </select>
+            <button id="speakButton">Speak</button>
+            <button id="saveButton">Save as MP3</button>
+        </div>
+        <div class="samples">
+            <h2>Samples</h2>
+            <button class="sample" data-text="Hello! Welcome to the Text-to-Speech tool.">Sample 1</button>
+            <button class="sample" data-text="This is a demonstration of text-to-speech synthesis.">Sample 2</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
